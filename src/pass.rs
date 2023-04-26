@@ -39,7 +39,7 @@ mod test {
 
         assert_eq!(&pass.plaintext.len(), &length);
 
-        let mut hash_components: Vec<&str> = pass.sha512.split("$").collect();
+        let mut hash_components: Vec<&str> = pass.sha512.split('$').collect();
 
         assert_eq!(hash_components.len(), 4);
         let hash = hash_components.pop().unwrap();
@@ -50,8 +50,8 @@ mod test {
         assert_eq!(nothing, Some(""));
         assert_eq!(algo, Some("6"));
         // legit salt would be between 8 and 16 chars, we use 16 in this crate
-        assert_eq!(salt.len(), 16 as usize);
+        assert_eq!(salt.len(), 16_usize);
         // a sha512 in base 64 is 86 chars, or 88 with padding
-        assert_eq!(hash.len(), 86 as usize);
+        assert_eq!(hash.len(), 86_usize);
     }
 }
