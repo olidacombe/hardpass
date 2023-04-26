@@ -9,6 +9,7 @@ pub fn sha512(password: &str, salt: &str) -> String {
     .unwrap()
 }
 
+#[cfg(test)]
 mod test {
     use super::*;
 

@@ -28,6 +28,7 @@ impl Pass {
     }
 }
 
+#[cfg(test)]
 mod test {
     use super::*;
 
