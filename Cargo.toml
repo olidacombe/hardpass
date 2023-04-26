@@ -7,13 +7,11 @@ authors = ["Oli Dacombe <olidacombe@gmail.com>"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-base64 = "0.21.0"
 clap = { version = "4.2.4", features = ["derive"] }
 rand = "0.8.5"
 serde = { version = "1.0.160", features = ["derive"] }
 serde_json = "1.0.96"
 sha-crypt = "0.5.0"
-sha2 = "0.10.6"
 
 
 [dev-dependencies.cargo-husky]
