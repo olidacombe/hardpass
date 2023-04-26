@@ -5,6 +5,9 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Oli Dacombe <olidacombe@gmail.com>"]
 license = "MIT OR Apache-2.0"
+homepage = "https://github.com/olidacombe/hardpass"
+repository = "https://github.com/olidacombe/hardpass"
+keywords = ["generator", "hash", "password"]
 
 [dependencies]
 clap = { version = "4.2.4", features = ["derive"] }
